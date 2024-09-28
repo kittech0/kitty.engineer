@@ -6,12 +6,19 @@ body {
     background-color: rgb(24, 24, 24);
 }
 
-.centered-div {
+.main-div {
+    background-color: rgb(25, 25, 25);
+    padding: 1em 1em 1em;
+    margin: 2em auto;
+}
+
+.sub-div {
     background-color: rgb(27, 27, 27);
-    max-width: 100vw;
-    width: 10em;
-    min-width: 5em;
+    padding: 1em 2em 1em;
     margin: 1em auto;
-    padding: 1em 2rem 1em;
+}
+
+.centered-div {
+    max-width: 50em;
     box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
 }
