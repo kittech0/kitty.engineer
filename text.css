@@ -1,0 +1,15 @@
+.center-text {
+    text-align: center;
+}
+
+body {
+    color: whitesmoke;
+}
+
+.unselectable {
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
