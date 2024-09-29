@@ -4,21 +4,33 @@
 
 body {
     background-color: rgb(24, 24, 24);
+    color: whitesmoke;
+    font-family: 'Fira Sans', sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
 }
 
-.main-div {
+#main-div {
     background-color: rgb(25, 25, 25);
-    padding: 1em 1em 1em;
-    margin: 2em auto;
 }
 
 .sub-div {
-    background-color: rgb(27, 27, 27);
-    padding: 1em 2em 1em;
-    margin: 1em auto;
+    padding: 2em;
+    margin: 1em 0;
+    background-color: rgb(30, 30, 30);
+    border-radius: 8px;
+}
+
+header#title {
+    margin-bottom: 1.5em;
 }
 
 .centered-div {
     max-width: 50em;
-    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
+    margin: 2em auto;
+    padding: 2em;
+    background-color: rgb(27, 27, 27);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    border-radius: 8px;
 }

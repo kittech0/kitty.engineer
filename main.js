@@ -1,6 +1,7 @@
 function typeText(text, elementId, delay) {
+    let textShifted = text.substr(1);
     let i = 0;
-    for (let letter of text) {
+    for (let letter of textShifted) {
         setTimeout(function () {
             document.getElementById(elementId).textContent += letter;
         }, i * delay);
@@ -9,5 +10,5 @@ function typeText(text, elementId, delay) {
 }
 
 window.onload = () => {
-    typeText('Hello there 👋', 'title', 100);
+    typeText('  Kittech\'s Website', 'title-text', 100);
 };
