@@ -13,3 +13,22 @@ body {
     -ms-user-select: none;
     user-select: none;
 }
+
+a:link {
+    color: lightblue;
+    text-decoration: none;
+}
+
+a:visited {
+    color: lightskyblue;
+    text-decoration: none;
+}
+
+a:hover {
+    color: whitesmoke;
+    text-decoration: none;
+}
+
+li::marker {
+    color: whitesmoke;
+}

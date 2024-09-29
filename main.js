@@ -1,10 +1,13 @@
 function typeText(text, elementId, delay) {
-    for (let i = 0; i < text.length; i++) {
+    let i = 0;
+    for (let letter of text) {
         setTimeout(function () {
-            document.getElementById(elementId).textContent += text.charAt(i);
-        }, i * delay); // Delay increases with each iteration
+            document.getElementById(elementId).textContent += letter;
+        }, i * delay);
+        i++;
     }
 }
-window.onload = function () {
-    typeText('Welcome to my website!', 'header', 100); 
+
+window.onload = () => {
+    typeText('Hello there 👋', 'title', 100);
 };
