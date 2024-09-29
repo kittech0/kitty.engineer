@@ -10,5 +10,5 @@ function typeText(text, elementId, delay) {
 }
 
 window.onload = () => {
-    typeText('  Kittech\'s Website', 'title-text', 100);
+    typeText('. Kittech\'s Website 🐈', 'title-text', 100);
 };
