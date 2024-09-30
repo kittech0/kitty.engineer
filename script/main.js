@@ -1,3 +1,4 @@
+// typeText(String,String,Int)
 function typeText(text, elementId, delay) {
     let textShifted = text.substr(1);
     let i = 0;
