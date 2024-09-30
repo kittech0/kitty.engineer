@@ -57,6 +57,17 @@ hr {
     opacity: 0.5;
 }
 
-#sourcecode {
+.right-text {
     text-align: right;
+}
+
+.small-text {
+    font-size: 0.750em;
+}
+
+.blog-text {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 300ch;
 }
