@@ -24,17 +24,7 @@ a {
     transition: color 0.3s ease-in-out;
 }
 
-a:link,
-a:visited {
-    color: lightblue;
-    text-decoration: none;
-    transition: color 0.3s ease;
-}
 
-a:hover {
-    color: whitesmoke;
-    text-decoration: underline;
-}
 
 li::marker {
     color: whitesmoke;
@@ -70,4 +60,20 @@ hr {
     overflow: hidden;
     text-overflow: ellipsis;
     max-width: 300ch;
+}
+
+a {
+    color: whitesmoke;
+    text-decoration: none;
+}
+
+.link:link,
+.link:visited {
+    color: lightblue;
+    transition: color 0.3s ease;
+}
+
+.link:hover {
+    color: whitesmoke;
+    text-decoration: underline;
 }

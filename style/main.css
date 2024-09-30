@@ -2,6 +2,10 @@
 @import url(./font.css);
 @import url(./text.css);
 
+.blog-block:hover {
+    box-shadow: 0 4px 8px rgb(255, 255, 255);
+}
+
 body {
     background-color: rgb(24, 24, 24);
     color: whitesmoke;

@@ -1,4 +1,4 @@
 import { typeText } from "./lib.js";
 window.onload = () => {
-    typeText('. Kittech\'s Website 🐈', 'title-text', 100);
+    typeText('Test blog', 'title-text', 100);
 };
