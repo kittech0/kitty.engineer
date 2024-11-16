@@ -1,4 +1,4 @@
 import { typeText } from "./lib.js";
 window.onload = () => {
-    typeText('Test blog', 'title-text', 100);
+    typeText('title-text', 100);
 };
