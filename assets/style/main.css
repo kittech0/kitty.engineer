@@ -1,0 +1,13 @@
+@import url(./text.css);
+
+body {
+    margin-top: 1em;
+    display: grid;
+    color: white;
+}
+#main {
+    background: black;
+    margin: 0 auto;
+    text-align: center;
+    place-self: center;
+}
