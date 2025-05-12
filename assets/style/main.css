@@ -1,13 +1,24 @@
 @import url(./text.css);
 
 body {
-    margin-top: 1em;
     display: grid;
     color: white;
+    min-height: 100vh;
+    margin: 0;
+    padding: 1em;
 }
+
 #main {
     background: black;
-    margin: 0 auto;
+    padding: 1.5em;
     text-align: center;
     place-self: center;
+    width: fit-content;
+
+    margin: 1em 0;
+    box-sizing: border-box;
+}
+
+img {
+    max-width: 100%;
 }
