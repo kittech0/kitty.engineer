@@ -1,16 +1,26 @@
 @import url(./text.css);
 
+:root {
+    --body-bg-color: #ff9b85; /* Coral */
+    --body-text-color: #3a001e; /* Dark reddish-purple */
+    --main-bg-color: #ffdac1; /* Light peach */
+    --main-text-color: #3a001e; /* Dark reddish-purple */
+    /* You might also want variables for link colors, heading colors, etc. */
+}
+
 body {
     display: grid;
-    background-color: #333;
-    color: #f0f0f0;
+    background-color: var(--body-bg-color);
+    color: var(--body-text-color);
     min-height: 100vh;
     margin: 0;
     padding: 1em;
+    overflow: hidden;
 }
 
 #main {
-    background-color: #555;
+    background-color: var(--main-bg-color);
+    color: var(--main-text-color);
     padding: 1.5em;
     text-align: center;
     place-self: center;
