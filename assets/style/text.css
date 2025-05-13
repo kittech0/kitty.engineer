@@ -14,13 +14,13 @@
 }
 
 .radon-font {
-    font-family: "monaspace-radon";
+    font-family: "monaspace-radon", cursive;
 }
 
 .thin-font {
-    font-family: "monaspace-nano-thin";
+    font-family: "monaspace-nano-thin", serif;
 }
 
 .nano-font {
-    font-family: "monaspace-nano-thin";
+    font-family: "monaspace-nano-thin", sans-serif;
 }

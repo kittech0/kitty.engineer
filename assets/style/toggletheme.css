@@ -1,0 +1,78 @@
+#mode-toggle {
+    position: absolute;
+    inset-block-start: 1em;
+    inset-inline-start: 1em;
+    z-index: 1000;
+    inline-size: 2.5em;
+    block-size: 2.5em;
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+    background-color: var(--main-bg);
+    color: var(--text-color);
+    box-shadow: var(--button-shadow-color) 0 2px 5px;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    font-size: 1.4em;
+    line-height: 1;
+    appearance: none;
+    -webkit-appearance: none;
+    outline-offset: 0;
+    transition: background-color 0.2s ease-in-out,
+    box-shadow 0.2s ease-in-out,
+    transform 0.1s ease-in-out;
+
+    &:hover {
+        background-color: var(--link-visited-color);
+        box-shadow: var(--button-shadow-color) 0 4px 8px;
+        transform: scale(1.05);
+    }
+
+    &:active {
+        background-color: var(--link-hover-color);
+        box-shadow: var(--button-shadow-color) 0px 1px 3px;
+        transform: scale(0.95);
+    }
+
+    &:focus-visible {
+        outline: 2px solid var(--link-hover-color);
+        outline-offset: 2px;
+    }
+}
+
+:is(button:not(#mode-toggle), input[type="submit"]) {
+    display: inline-block;
+    background-color: var(--link-color);
+    color: var(--button-text-color);
+    padding-block: 0.75em;
+    padding-inline: 1.5em;
+    border: none;
+    border-radius: 0.5em;
+    cursor: pointer;
+    font-size: 1rem;
+    font-family: inherit;
+    line-height: normal;
+    text-align: center;
+    text-decoration: none;
+    box-shadow: var(--button-shadow-color) 0 2px 5px;
+    transition: background-color 0.2s ease-in-out,
+    box-shadow 0.2s ease-in-out,
+    transform 0.1s ease-in-out;
+
+    &:hover {
+        background-color: var(--link-hover-color);
+        box-shadow: var(--button-shadow-color) 0 4px 10px;
+    }
+
+    &:active {
+        background-color: var(--link-hover-color);
+        box-shadow: var(--button-shadow-color) 0 1px 3px;
+        transform: translateY(1px);
+    }
+
+    &:focus-visible {
+        outline: 2px solid var(--link-hover-color);
+        outline-offset: 3px;
+    }
+}

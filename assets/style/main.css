@@ -1,17 +1,32 @@
-@import url(./text.css);
+@import "text.css";
+@import "colors.css";
+@import "toggletheme.css";
 
-:root {
-    --body-bg-color: #ff9b85; /* Coral */
-    --body-text-color: #3a001e; /* Dark reddish-purple */
-    --main-bg-color: #ffdac1; /* Light peach */
-    --main-text-color: #3a001e; /* Dark reddish-purple */
-    /* You might also want variables for link colors, heading colors, etc. */
+a {
+    &:link {
+        color: var(--link-color);
+        text-decoration: none;
+    }
+
+    &:visited {
+        color: var(--link-visited-color);
+    }
+
+    &:hover {
+        color: var(--link-hover-color);
+        text-decoration: underline;
+    }
+    
+    &:focus {
+        outline: 2px solid var(--link-hover-color);
+        outline-offset: 2px;
+    }
 }
 
 body {
     display: grid;
-    background-color: var(--body-bg-color);
-    color: var(--body-text-color);
+    background-color: var(--body-bg);
+    color: var(--text-color);
     min-height: 100vh;
     margin: 0;
     padding: 1em;
@@ -19,17 +34,19 @@ body {
 }
 
 #main {
-    background-color: var(--main-bg-color);
-    color: var(--main-text-color);
+    box-shadow: var(--main-shadow-color) 0 3px 8px;
+    border-radius: 1em;
+    background-color: var(--main-bg);
     padding: 1.5em;
     text-align: center;
     place-self: center;
     width: fit-content;
-
-    margin: 1em 0;
+    max-width: 90%;
+    margin: 1em auto;
     box-sizing: border-box;
 }
 
 img {
     max-width: 100%;
+    height: auto;
 }
