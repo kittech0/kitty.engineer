@@ -1,8 +1,6 @@
 #mode-toggle {
-    position: absolute;
     inset-block-start: 1em;
     inset-inline-start: 1em;
-    z-index: 1000;
     inline-size: 2.5em;
     block-size: 2.5em;
     border-radius: 50%;
@@ -10,18 +8,16 @@
     place-items: center;
     background-color: var(--main-bg);
     color: var(--text-color);
-    box-shadow: var(--button-shadow-color) 0 2px 5px;
+    /*box-shadow: var(--button-shadow-color) 0 2px 5px;*/
+    box-shadow: var(--button-shadow-color) 0 0 10px 0;
+
     border: none;
     padding: 0;
     cursor: pointer;
     font-size: 1.4em;
-    line-height: 1;
-    appearance: none;
-    -webkit-appearance: none;
     outline-offset: 0;
-    transition: background-color 0.2s ease-in-out,
-    box-shadow 0.2s ease-in-out,
-    transform 0.1s ease-in-out;
+    transition: background-color 0.2s ease-in,
+    transform 0.1s ease-in;
 
     &:hover {
         background-color: var(--link-visited-color);
@@ -31,7 +27,7 @@
 
     &:active {
         background-color: var(--link-hover-color);
-        box-shadow: var(--button-shadow-color) 0px 1px 3px;
+        box-shadow: var(--button-shadow-color) 0 1px 3px;
         transform: scale(0.95);
     }
 
@@ -56,9 +52,8 @@
     text-align: center;
     text-decoration: none;
     box-shadow: var(--button-shadow-color) 0 2px 5px;
-    transition: background-color 0.2s ease-in-out,
-    box-shadow 0.2s ease-in-out,
-    transform 0.1s ease-in-out;
+    transition: background-color 0.2s ease-in,
+    transform 0.1s ease-in;
 
     &:hover {
         background-color: var(--link-hover-color);

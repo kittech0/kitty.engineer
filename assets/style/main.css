@@ -42,10 +42,14 @@ body {
     place-self: center;
     width: fit-content;
     max-width: 90%;
-    margin: 1em auto;
     box-sizing: border-box;
 }
 
 img {
     max-width: 100%;
+}
+
+#author-text {
+    margin: 1em;
+    place-self: center;
 }

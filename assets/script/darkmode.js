@@ -15,8 +15,9 @@ const setTheme = mode => {
 }
 
 
+
 const savedTheme = getTheme();
-savedTheme !== null ? setTheme(savedTheme) : setTheme("light");
+setTheme(getTheme());
 
 toggleButton.addEventListener('click', _ =>
     setTheme(getTheme() === "dark" ? "light" : "dark")
