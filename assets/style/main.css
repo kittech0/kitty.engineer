@@ -2,7 +2,34 @@
 @import "colors.css";
 @import "toggletheme.css";
 
-a {
+
+
+body {
+    background-color: var(--body-bg);
+    color: var(--text-color);
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    font-variant-emoji: emoji ;
+}
+
+
+#main {
+    box-shadow: var(--main-shadow-color) 0 3px 8px;
+    border-radius: 1em;
+    background-color: var(--main-bg);
+    text-align: center;
+    max-width: 50em;
+    margin: 2em auto;
+    padding: 2em;
+}
+
+#author-text {
+    margin: 10em auto;
+    text-align: center;
+}
+
+#link, a {
     &:link {
         color: var(--link-color);
         text-decoration: none;
@@ -21,35 +48,4 @@ a {
         outline: 2px solid var(--link-hover-color);
         outline-offset: 2px;
     }
-}
-
-body {
-    display: grid;
-    background-color: var(--body-bg);
-    color: var(--text-color);
-    min-height: 100vh;
-    margin: 0;
-    padding: 1em;
-    overflow: hidden;
-}
-
-#main {
-    box-shadow: var(--main-shadow-color) 0 3px 8px;
-    border-radius: 1em;
-    background-color: var(--main-bg);
-    padding: 1.5em;
-    text-align: center;
-    place-self: center;
-    width: fit-content;
-    max-width: 90%;
-    box-sizing: border-box;
-}
-
-img {
-    max-width: 100%;
-}
-
-#author-text {
-    margin: 1em;
-    place-self: center;
 }
