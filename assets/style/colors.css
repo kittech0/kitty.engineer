@@ -16,7 +16,6 @@
     --dark-link-hover-color: #FFD700;
     --dark-button-text-color: var(--dark-body-bg);
     --dark-main-shadow-color: rgba(255, 255, 255, 0.1);
-    --dark-button-shadow-color:  #F4EAD5;
 }
 
 body.dark-mode {
@@ -28,4 +27,5 @@ body.dark-mode {
     --link-hover-color: var(--dark-link-hover-color);
     --main-shadow-color: var(--dark-main-shadow-color);
     --button-shadow-color: var(--dark-main-shadow-color);
+    --button-text-color: var(--dark-button-text-color);
 }
