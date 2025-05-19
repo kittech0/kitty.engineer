@@ -2,17 +2,14 @@
 @import "colors.css";
 @import "toggletheme.css";
 
-
-
 body {
     background-color: var(--body-bg);
     color: var(--text-color);
     margin: 0;
-    padding: 0;
-    overflow: hidden;
-    font-variant-emoji: emoji ;
+    padding: 1em;
+    font-size: clamp(0.875rem, 0.75rem + 0.5vw, 1.125rem);
+    line-height: 1.6;
 }
-
 
 #main {
     box-shadow: var(--main-shadow-color) 0 3px 8px;
@@ -20,7 +17,7 @@ body {
     background-color: var(--main-bg);
     text-align: center;
     max-width: 50em;
-    margin: 2em auto;
+    margin: auto;
     padding: 2em;
 }
 
@@ -29,23 +26,27 @@ body {
     text-align: center;
 }
 
-#link, a {
-    &:link {
-        color: var(--link-color);
-        text-decoration: none;
-    }
+a {
+    color: var(--link-color);
+    text-decoration: none;
+}
 
-    &:visited {
-        color: var(--link-visited-color);
-    }
+a:visited {
+    color: var(--link-visited-color);
+}
 
-    &:hover {
-        color: var(--link-hover-color);
-        text-decoration: underline;
-    }
+a:hover {
+    color: var(--link-hover-color);
+    text-decoration: underline;
+}
 
-    &:focus {
-        outline: 2px solid var(--link-hover-color);
-        outline-offset: 2px;
-    }
+a:focus {
+    outline: 2px solid var(--link-hover-color);
+    outline-offset: 2px;
+}
+
+img {
+    display: block;
+    margin: auto;
+    max-width: 100%;
 }
