@@ -1,3 +1,5 @@
+@import "colors.css";
+
 #mode-toggle {
     inset-block-start: 1em;
     inset-inline-start: 1em;
