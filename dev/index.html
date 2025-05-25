@@ -4,9 +4,78 @@
     <title>😼Kittech's place😼</title>
     <link href="/assets/imgs/icon.webp" rel="icon">
 
+    <style>
+        :root {
+            --body-bg: #F4EAD5;
+            --text-color: #6B5B45;
+            --main-bg: #FAF0E6;
+            --link-color: #008B8B;
+            --link-visited-color: #CD5C5C;
+            --link-hover-color: #8B4513;
+            --button-text-color: var(--main-bg);
+            --main-shadow-color: rgba(0, 0, 0, 0.24);
+            --button-shadow-color: rgba(0, 0, 0, 0.1);
+            --dark-body-bg: #212529;
+            --dark-text-color: #D3D3C8;
+            --dark-main-bg: #343a40;
+            --dark-link-color: #DAA520;
+            --dark-link-visited-color: #B0C4DE;
+            --dark-link-hover-color: #FFD700;
+            --dark-button-text-color: var(--dark-body-bg);
+            --dark-main-shadow-color: rgba(255, 255, 255, 0.1);
+        }
+
+        body.dark-mode {
+            --body-bg: var(--dark-body-bg);
+            --text-color: var(--dark-text-color);
+            --main-bg: var(--dark-main-bg);
+            --link-color: var(--dark-link-color);
+            --link-visited-color: var(--dark-link-visited-color);
+            --link-hover-color: var(--dark-link-hover-color);
+            --main-shadow-color: var(--dark-main-shadow-color);
+            --button-shadow-color: var(--dark-main-shadow-color);
+            --button-text-color: var(--dark-button-text-color);
+        }
+
+        :root {
+            color-scheme: light dark;
+        }
+
+        body {
+            background-color: var(--body-bg);
+            color: var(--text-color);
+            margin: 0;
+            padding: 1em;
+            font-size: clamp(0.875rem, 0.75rem + 0.5vw, 1.125rem);
+            line-height: 1.6;
+        }
+
+        main {
+            box-shadow: var(--main-shadow-color) 0 3px 8px;
+            border-radius: 1em;
+            background-color: var(--main-bg);
+            text-align: center;
+            max-width: 50em;
+            margin: auto;
+            padding: 2em;
+        }
+
+        footer {
+            margin: 10em auto;
+            text-align: center;
+        }
+
+    </style>
+
+    <noscript>
+        <link href="/style/main.css" rel="stylesheet"/>
+        <link href="/style/text.css" rel="stylesheet"/>
+        <link href="/style/toggletheme.css" rel="stylesheet"/>
+    </noscript>
     <link href="/style/main.css" rel="stylesheet"/>
     <link href="/style/text.css" rel="stylesheet"/>
     <link href="/style/toggletheme.css" rel="stylesheet"/>
+
 
     <meta charset="UTF-8"/>
     <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
@@ -66,7 +135,7 @@
                         target="_blank"
                 >Modrinth
                 </a></h3>
-                
+
             </li>
         </ul>
     </article>
