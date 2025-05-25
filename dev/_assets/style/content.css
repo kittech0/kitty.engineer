@@ -1,0 +1,40 @@
+footer {
+    margin: 10em auto;
+    text-align: center;
+}
+
+a {
+    color: var(--link-color);
+    text-decoration: none;
+}
+
+nav {
+    text-align: center;
+}
+
+img {
+    display: block;
+    margin: auto;
+    max-width: 100%;
+}
+
+nav a {
+    margin: 1em;
+}
+
+a:visited {
+    color: var(--link-visited-color);
+}
+
+a:hover {
+    color: var(--link-hover-color);
+    text-decoration: underline;
+}
+
+.left-text {
+    text-align: left;
+}
+
+.hide {
+    display: none;
+}
