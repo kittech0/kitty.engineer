@@ -1,0 +1,59 @@
+@import "colors.css";
+
+:root {
+    color-scheme: light dark;
+}
+
+body {
+    background-color: var(--body-bg);
+    color: var(--text-color);
+    margin: 0;
+    padding: 1em;
+    font-size: clamp(0.875rem, 0.75rem + 0.5vw, 1.125rem);
+    line-height: 1.6;
+}
+
+main {
+    box-shadow: var(--main-shadow-color) 0 3px 8px;
+    border-radius: 1em;
+    background-color: var(--main-bg);
+    text-align: center;
+    max-width: 50em;
+    margin: auto;
+    padding: 2em;
+}
+
+footer {
+    margin: 10em auto;
+    text-align: center;
+}
+
+a {
+    color: var(--link-color);
+    text-decoration: none;
+}
+
+a:visited {
+    color: var(--link-visited-color);
+}
+
+a:hover {
+    color: var(--link-hover-color);
+    text-decoration: underline;
+}
+
+a:focus {
+    outline: 2px solid var(--link-hover-color);
+    outline-offset: 2px;
+}
+
+img {
+    display: block;
+    margin: auto;
+    max-width: 100%;
+}
+
+nav ol {
+    list-style-type: none;
+    padding-left: 0;
+}

@@ -1,0 +1,28 @@
+@font-face {
+    font-family: "monaspace-nano";
+    src: url("../font/MonaspaceNeon-Regular.woff2");
+}
+
+@font-face {
+    font-family: "monaspace-nano-thin";
+    src: url("../font/MonaspaceNeon-Light.woff2");
+}
+
+@font-face {
+    font-family: "monaspace-radon";
+    src: url("../font/MonaspaceRadon-Regular.woff2");
+}
+
+.radon-font {
+    font-family: "monaspace-radon", cursive;
+}
+
+.thin-font {
+    font-family: "monaspace-nano-thin", serif;
+}
+
+.nano-font {
+    font-family: "monaspace-nano-thin", sans-serif;
+}
+
+
