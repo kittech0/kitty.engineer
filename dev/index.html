@@ -24,16 +24,53 @@
     <meta content="Kittech's website" property="twitter:title"/>
     <meta content="Silly IT guy that also is catholic." property="twitter:description"/>
     <meta content="https://kitty.engineer/assets/imgs/maxwell.webp" property="twitter:image"/>
+    <script>const _ = 0;</script>
 </head>
 <body>
+
 
 <main>
     <button aria-label="Toggle dark mode" id="mode-toggle">☀️</button>
     <h1 class="radon-font">Kittech's place</h1>
     <nav>
-        <a class="nano-font" href="#">About me</a>
+        <a class="nano-font" href="#">Main</a>
+        <a class="nano-font" href="#aboutme">About me</a>
+        <a class="nano-font" href="#places">Places</a>
+
     </nav>
-    <img alt="Construction" src="/assets/imgs/maxwell.webp"/>
+
+    <img alt="Construction" id="main" src="/assets/imgs/maxwell.webp"/>
+    <p class="nano-font" id="aboutme" style="display: none">
+        Hello, I'm kittech.
+        My hobby is programming and theology.
+        I'm right now student of IT and plan to become an IT specialist.
+        My favorite programming language is 🦀rust🦀 and
+        on my laptop I use Fedora Linux.
+    </p>
+    <article class="radon-font" id="places" style="display: none">
+        <ul>
+            <li>
+                <h3><a
+                        class="link"
+                        href="https://github.com/kittech0"
+                        rel="noopener noreferrer"
+                        target="_blank"
+                >GitHub
+                </a></h3>
+            </li>
+            <li>
+                <h3><a
+                        class="link"
+                        href="https://modrinth.com/user/kittech"
+                        rel="noopener noreferrer"
+                        target="_blank"
+                >Modrinth
+                </a></h3>
+                
+            </li>
+        </ul>
+    </article>
+
     <br/>
     <a class="nano-font" href="/old">Old one</a>
 </main>
@@ -43,5 +80,7 @@
 </footer>
 
 <script defer src="/script/main.js"></script>
+<script defer src="/script/pages.js"></script>
+
 </body>
 </html>

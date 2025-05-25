@@ -43,15 +43,6 @@ const onClick = () => {
     setTheme(value);
 };
 
-const abc = () => console.log("abc");
-
-// const onHashChange = () => {
-//     const options = ({
-//         "#abc": abc
-//     });
-//     const option = options[location.hash] || (_ => _);
-//     option();
-// };
 
 const registerDarkMode = () => {
     setTheme(getStoredItem(THEME_KEY));
@@ -59,9 +50,5 @@ const registerDarkMode = () => {
     toggleButton.addEventListener("click", onClick);
 };
 
-// const registerSubSites = () => {
-//     window.addEventListener("hashchange", onHashChange);
-// };
 
 registerDarkMode();
-// registerSubSites();
