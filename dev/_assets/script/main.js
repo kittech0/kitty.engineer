@@ -1,5 +1,5 @@
 /* global console */
-/* jshint esversion: 6 */
+/* jshint esversion: 11 */
 
 "use strict";
 
@@ -52,3 +52,5 @@ const registerDarkMode = () => {
 
 
 registerDarkMode();
+
+
