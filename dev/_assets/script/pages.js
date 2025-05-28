@@ -29,6 +29,6 @@ const changePages = async (e) => {
 };
 
 window.onhashchange = changePages;
-
+window.onload = changePages;
 
 changePages().then();
