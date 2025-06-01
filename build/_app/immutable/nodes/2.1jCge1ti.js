@@ -1,0 +1,1 @@
+import{f as a,a as r}from"../chunks/CsN_K2jW.js";import"../chunks/C4IRTviW.js";import{s as i,f as s}from"../chunks/B-gL9g7W.js";var m=a('<h1>Welcome to SvelteKit</h1> <p>Visit <a href="https://svelte.dev/docs/kit">svelte.dev/docs/kit</a> to read the documentation</p> <h1></h1>',1);function l(e){var t=m(),o=i(s(t),4);o.textContent="Hello world!",r(e,t)}export{l as component};
