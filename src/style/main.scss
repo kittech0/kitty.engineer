@@ -1,0 +1,45 @@
+$light-body-bg: #F4EAD5;
+$light-text-color: #5A493A;
+$light-main-bg: #FAF0E6;
+$light-link-color: #008B8B;
+$light-link-visited-color: #CD5C5C;
+$light-link-hover-color: #8B4513;
+$light-button-text-color: $light-main-bg;
+$light-main-shadow-color: rgba(0, 0, 0, 0.24);
+$light-button-shadow-color: rgba(0, 0, 0, 0.1);
+
+$dark-body-bg: #212529;
+$dark-text-color: #D3D3C8;
+$dark-main-bg: #343a40;
+$dark-link-color: #DAA520;
+$dark-link-visited-color: #B0C4DE;
+$dark-link-hover-color: #FFD700;
+$dark-button-text-color: $dark-body-bg;
+$dark-main-shadow-color: rgba(255, 255, 255, 0.1);
+
+:root {
+    color-scheme: light dark;
+}
+
+body {
+    background-color: $light-body-bg;
+    color: $light-text-color;
+}
+
+main {
+    box-shadow: $light-main-shadow-color 0 3px 8px;
+    background-color: $light-main-bg;
+}
+
+.radon-cursive {
+    font-family: var(--font-radon), cursive;
+}
+
+.neon-font {
+    font-family: var(--font-neon), cursive;
+}
+
+//
+//article {
+//    padding: 0 2em;
+//}
