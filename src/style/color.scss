@@ -1,0 +1,31 @@
+@import "../../public/colorVars";
+
+:root {
+    color-scheme: light dark;
+}
+
+body {
+    background-color: var(--body-bg);
+    color: var(--text-color);
+}
+
+main {
+    box-shadow: var(--text-color) 0 0 1em;
+    background-color: var(--main-bg);
+}
+
+a {
+    text-decoration: none;
+    margin: 1em;
+    color: var(--link-color);
+    font-size: 100%;
+
+    &:hover {
+        color: var(--link-hover-color);
+        transform: scale(1.2);
+    }
+
+    &:visited {
+        color: var(--link-visited-color);
+    }
+}
