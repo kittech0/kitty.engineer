@@ -1,11 +1,12 @@
 ---
+import icon from "../assets/icon.webp";
 interface Props {
     title: string
 }
 const {title} = Astro.props;
 ---
 <title>{title}</title>
-<link href="/icon.webp" rel="icon">
+<link href={icon.src} rel="icon">
 
 <meta charset="UTF-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
@@ -15,5 +16,5 @@ const {title} = Astro.props;
       name="keywords"/>
 <meta content="website" property="og:type"/>
 <meta content="https://kitty.engineer/" property="og:url"/>
-<meta content="😼{title}😼" property="og:title"/>
+<meta content={title} property="og:title"/>
 <meta content="Silly IT guy that also is catholic." property="og:description"/>
