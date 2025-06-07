@@ -2,8 +2,9 @@
 import Page from '../layout/Page.astro';
 import maxwell from "../assets/maxwell.webp";
 import {Image} from 'astro:assets';
+import Picture from 'astro/components/Picture.astro';
 ---
 
 <Page title="😼 Kittech's place 😼">
-    <Image style="max-width: 100%;" src={maxwell} alt="Construction"/>
+    <Picture style="max-width: 100%;" src={maxwell} alt="Construction"/>
 </Page>
