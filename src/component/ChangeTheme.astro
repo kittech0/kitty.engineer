@@ -1,0 +1,98 @@
+<button aria-label="Toggle dark mode" id="mode-toggle">☀️</button>
+
+
+<style lang="scss">
+    @import "../../public/colorVars";
+
+
+    #mode-toggle {
+        position: absolute;
+        inset-block-start: 1em;
+        inset-inline-start: 1em;
+        inline-size: 2.5em;
+        block-size: 2.5em;
+        border-radius: 50%;
+        display: grid;
+        place-items: center;
+        background-color: var(--main-bg);
+        color: var(--text-color);
+        box-shadow: var(--button-shadow-color) 0 0 10px 0;
+        border: none;
+        cursor: pointer;
+        font-size: 1.4em;
+        outline-offset: 0;
+        transition: background-color 0.2s ease-in,
+        transform 0.1s ease-in;
+
+        &:hover {
+            background-color: var(--link-visited-color);
+            box-shadow: var(--button-shadow-color) 0 4px 8px;
+            transform: scale(1.05);
+        }
+
+        &:active {
+            background-color: var(--link-hover-color);
+            box-shadow: var(--button-shadow-color) 0 1px 3px;
+            transform: scale(0.95);
+        }
+
+        &:focus-visible {
+            outline: 2px solid var(--link-hover-color);
+            outline-offset: 2px;
+        }
+    }
+</style>
+
+<script>
+    "use strict";
+
+    const
+        THEME_KEY = "theme",
+        toggleButton = document.getElementById("mode-toggle")!,
+        root = document.querySelector(':root')!;
+
+    const setTheme = (isDark: boolean) => {
+        if (isDark) {
+            root.classList.add("dark");
+        } else {
+            root.classList.remove("dark");
+        }
+        toggleButton.textContent = isDark ? '🌙' : '☀️';
+    };
+
+    const setStoredItem = (key: string, value: boolean) => {
+        try {
+            localStorage.setItem(key, value ? "1" : "0");
+            return value;
+        } catch (e) {
+            console.error("localStorage set error:", e);
+            return false;
+        }
+    };
+
+    const getStoredItem = (key: string) => {
+        try {
+            return localStorage.getItem(key) === "1";
+        } catch (e) {
+            console.error("localStorage get error:", e);
+            return false;
+        }
+    };
+
+
+    const onClick = () => {
+        const value = !getStoredItem(THEME_KEY);
+        setStoredItem(THEME_KEY, value);
+        setTheme(value);
+    };
+
+
+    const registerDarkMode = () => {
+        setTheme(getStoredItem(THEME_KEY));
+
+        toggleButton.onclick = onClick;
+    };
+
+
+    registerDarkMode();
+</script>

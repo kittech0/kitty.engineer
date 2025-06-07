@@ -7,7 +7,9 @@ export default defineConfig({
     output: 'static',
     compressHTML: true,
     site: "https://kitty.engineer",
-    prefetch: true,
+    prefetch: {
+        prefetchAll: true,
+    },
     experimental: {
         fonts: [{
             provider: "local",
