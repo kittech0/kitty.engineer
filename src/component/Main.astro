@@ -2,6 +2,7 @@
 import Navbar from "./Navbar.astro";
 import Title from "./Title.astro";
 import ChangeTheme from "./ChangeTheme.astro";
+import Language from "./Language.astro";
 interface Props {
     title: string
 }
@@ -9,7 +10,7 @@ const {title} = Astro.props;
 ---
 <main>
     <ChangeTheme/>
-
+    <Language/>
     <Title title={title}/>
     <Navbar/>
     <slot/>
@@ -24,5 +25,8 @@ const {title} = Astro.props;
         margin: auto;
         padding: 2em;
         position: relative;
+        box-shadow: var(--text-color) 0 0 1em;
+        background-color: var(--main-bg);
+
     }
 </style>

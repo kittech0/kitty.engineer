@@ -11,10 +11,10 @@
   "dependencies": {
     "@astrojs/solid-js": "^5.1.0",
     "@deno/astro-adapter": "^0.3.1",
-    "astro": "^5.8.1",
+    "astro": "^5.9.3",
     "sharp": "^0.34.2"
   },
   "devDependencies": {
-    "sass-embedded": "^1.89.1"
+    "sass-embedded": "^1.89.2"
   }
 }
