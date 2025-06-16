@@ -1,11 +1,19 @@
-<button aria-label="Toggle dark mode" id="mode-toggle">☀️</button>
+<div id="lang-selector">
+    <button id="lang-btn" aria-label="Select language">🇬🇧</button>
+    <div id="lang-list">
+        <div data-lang="en">🇬🇧 English</div>
+        <div data-lang="pl">🇵🇱 Polski</div>
+    </div>
+</div>
 
-
-<style lang="scss">
-    #mode-toggle {
+<style>
+    #lang-selector {
         position: absolute;
         top: 1em;
-        left: 1em;
+        right: 1em;
+    }
+
+    #lang-btn {
         width: 2.5em;
         height: 2.5em;
         border-radius: 50%;
@@ -38,4 +46,34 @@
             outline-offset: 2px;
         }
     }
+
+    #lang-list {
+        display: none;
+        position: absolute;
+        top: 3em;
+        right: 0;
+        background-color: var(--main-bg);
+        color: var(--text-color);
+        box-shadow: var(--button-shadow-color) 0 0 10px 0;
+        border: none;
+        cursor: pointer;
+        outline-offset: 0;
+        transition: background-color 0.2s ease-in,
+        transform 0.1s ease-in;
+    }
+
+    #lang-list div {
+        padding: 0.5em 1em;
+        white-space: nowrap;
+    }
+
+    #lang-list div:hover {
+        background: var(--link-visited-color);
+    }
+
+    #lang-selector.open #lang-list {
+        display: block;
+    }
 </style>
+
+

@@ -10,3 +10,21 @@ const {href = "", newPage} = Astro.props;
 </a> : <a href={href}>
     <slot/>
 </a>}
+
+<style>
+    a {
+        text-decoration: none;
+        margin: 1em;
+        color: var(--link-color);
+        font-size: 100%;
+
+        &:hover {
+            color: var(--link-hover-color);
+            transform: scale(1.2);
+        }
+
+        &:visited {
+            color: var(--link-visited-color);
+        }
+    }
+</style>
