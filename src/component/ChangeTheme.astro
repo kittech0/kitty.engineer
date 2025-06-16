@@ -2,12 +2,15 @@
 
 
 <style lang="scss">
+    @import "../../public/colorVars";
+
+
     #mode-toggle {
         position: absolute;
-        top: 1em;
-        left: 1em;
-        width: 2.5em;
-        height: 2.5em;
+        inset-block-start: 1em;
+        inset-inline-start: 1em;
+        inline-size: 2.5em;
+        block-size: 2.5em;
         border-radius: 50%;
         display: grid;
         place-items: center;
@@ -39,3 +42,57 @@
         }
     }
 </style>
+
+<script>
+    "use strict";
+
+    const
+        THEME_KEY = "theme",
+        toggleButton = document.getElementById("mode-toggle")!,
+        root = document.querySelector(':root')!;
+
+    const setTheme = (isDark: boolean) => {
+        if (isDark) {
+            root.classList.add("dark");
+        } else {
+            root.classList.remove("dark");
+        }
+        toggleButton.textContent = isDark ? '🌙' : '☀️';
+    };
+
+    const setStoredItem = (key: string, value: boolean) => {
+        try {
+            localStorage.setItem(key, value ? "1" : "0");
+            return value;
+        } catch (e) {
+            console.error("localStorage set error:", e);
+            return false;
+        }
+    };
+
+    const getStoredItem = (key: string) => {
+        try {
+            return localStorage.getItem(key) === "1";
+        } catch (e) {
+            console.error("localStorage get error:", e);
+            return false;
+        }
+    };
+
+
+    const onClick = () => {
+        const value = !getStoredItem(THEME_KEY);
+        setStoredItem(THEME_KEY, value);
+        setTheme(value);
+    };
+
+
+    const registerDarkMode = () => {
+        setTheme(getStoredItem(THEME_KEY));
+
+        toggleButton.onclick = onClick;
+    };
+
+
+    registerDarkMode();
+</script>
