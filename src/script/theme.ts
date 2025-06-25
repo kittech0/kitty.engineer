@@ -11,7 +11,7 @@ const isDark = (): boolean => {
     }
 };
 
-const setTheme = (dark: boolean): void => {
+const setTheme = (dark: boolean) => {
     root.classList.toggle("dark", dark);
     toggleButton.textContent = dark ? "🌙" : "☀️";
     localStorage.setItem(THEME_KEY, JSON.stringify(dark));

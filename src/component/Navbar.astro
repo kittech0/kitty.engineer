@@ -3,10 +3,23 @@ import Link from "./Link.astro";
 ---
 
 <nav class="neon-font">
-    <Link href="/">Main</Link>
-    <Link href="/aboutme">About me</Link>
-    <Link href="/places">Places</Link>
-    <Link href="/distributism">Distributism</Link>
-    <Link href="/books">Books</Link>
-    <Link href="/projects">Projects</Link>
+    <Link href="/"><p data-translation="main_nav">%main-nav%</p></Link>
+    <Link href="/aboutme">
+        <p data-translation="aboutme_nav">%aboutme-nav%</p>
+    </Link>
+    <Link href="/places"><p data-translation="places_nav">%places-nav%</p></Link
+    >
+    <Link href="/distributism"
+        ><p data-translation="distributism_nav">%distributism-nav%</p></Link
+    >
+    <Link href="/books"><p data-translation="books_nav">%books-nav%</p></Link>
+    <Link href="/projects"
+        ><p data-translation="projects_nav">%projects-nav%</p></Link
+    >
 </nav>
+
+<style>
+    p {
+        display: inline;
+    }
+</style>
