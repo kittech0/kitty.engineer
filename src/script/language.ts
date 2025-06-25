@@ -7,7 +7,7 @@ const KEY = "lang";
 const [btn, selector, list] = ["lang-btn", "lang-selector", "lang-list"].map(id => document.getElementById(id)!);
 const elements = document.querySelectorAll<HTMLElement>("[data-translation]");
 
-const FLAGS: Record<LanguageTypes, string> = {pl: "🇵🇱", en: "🇬🇧"};
+const FLAGS: Record<LanguageTypes, string> = { pl: "🇵🇱", en: "🇬🇧" };
 
 const loadLanguage = (lang: LanguageTypes) =>
     fetch(`/lang/${lang}.json`).then(res => res.json() as Promise<FileLanguage>);
@@ -24,7 +24,7 @@ const updateLanguage = async (lang: LanguageTypes) => {
 
 btn.onclick = () => selector.classList.toggle("open");
 
-list.onclick = async ({target}) => {
+list.onclick = async ({ target }) => {
     const item = (target as HTMLElement).closest<HTMLElement>("[data-lang]");
     if (item) {
         await updateLanguage(item.dataset.lang as LanguageTypes);
@@ -34,4 +34,4 @@ list.onclick = async ({target}) => {
 
 await updateLanguage((localStorage.getItem(KEY) as LanguageTypes) || "en");
 
-export {};
+export { };

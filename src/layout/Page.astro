@@ -1,21 +1,22 @@
 ---
 import Head from "../component/Head.astro";
 import "../style/color.scss";
-import "../style/font.scss"
-import {Font} from 'astro:assets';
+import "../style/font.scss";
+import { Font } from "astro:assets";
 import Body from "../component/Body.astro";
 interface Props {
-    title: string
+    title: string;
 }
-const {title} = Astro.props;
+const { title } = Astro.props;
 ---
-<!DOCTYPE html>
-<html lang="en">
-<Font cssVariable="--font-neon"/>
-<Font cssVariable="--font-radon"/>
 
-<Head title={title}/>
-<Body title={title}>
-<slot/>
-</Body>
+<!doctype html>
+<html lang="en">
+    <Font cssVariable="--font-neon" />
+    <Font cssVariable="--font-radon" />
+
+    <Head title={title} />
+    <Body title={title}>
+        <slot />
+    </Body>
 </html>

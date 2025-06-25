@@ -1,25 +1,27 @@
 ---
 import icon from "../assets/icon.webp";
 interface Props {
-    title: string
+    title: string;
 }
-const {title} = Astro.props;
+const { title } = Astro.props;
 ---
+
 <title>{title}</title>
-<link href={icon.src} rel="icon">
+<link href={icon.src} rel="icon" />
 
-<meta charset="UTF-8"/>
-<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<meta content="Silly IT guy that also is catholic." name="description"/>
-<meta content="kittech" name="author"/>
-<meta content="it,technology,tech,cat,kitty,kittech,cats,christian,engineer,programmer,programming"
-      name="keywords"/>
-<meta content="website" property="og:type"/>
-<meta content="https://kitty.engineer/" property="og:url"/>
-<meta content={title} property="og:title"/>
-<meta content="Silly IT guy that also is catholic." property="og:description"/>
+<meta charset="UTF-8" />
+<meta content="width=device-width, initial-scale=1.0" name="viewport" />
+<meta content="Silly IT guy that also is catholic." name="description" />
+<meta content="kittech" name="author" />
+<meta
+    content="it,technology,tech,cat,kitty,kittech,cats,christian,engineer,programmer,programming"
+    name="keywords"
+/>
+<meta content="website" property="og:type" />
+<meta content="https://kitty.engineer/" property="og:url" />
+<meta content={title} property="og:title" />
+<meta content="Silly IT guy that also is catholic." property="og:description" />
 
+<script src="../script/language.ts"></script>
 
-<script src="../script/language.ts"/>
-
-<script src="../script/theme.ts"/>
+<script src="../script/theme.ts"></script>

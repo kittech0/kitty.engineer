@@ -1,15 +1,18 @@
 ---
-const {href = "", newPage} = Astro.props;
+const { href = "", newPage } = Astro.props;
 ---
 
-{newPage === "true" ? <a rel="noopener noreferrer"
-                         target="_blank"
-                         href={href}
->
-    <slot/>
-</a> : <a href={href}>
-    <slot/>
-</a>}
+{
+    newPage === "true" ? (
+        <a rel="noopener noreferrer" target="_blank" href={href}>
+            <slot />
+        </a>
+    ) : (
+        <a href={href}>
+            <slot />
+        </a>
+    )
+}
 
 <style>
     a {
